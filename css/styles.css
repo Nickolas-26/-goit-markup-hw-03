@@ -161,6 +161,33 @@ span.logo-style-white {
 }
 
 
+/* button-secondary */
+.button-secondary {
+  display: block;
+  margin: 0 auto;
+  background-color: var(--primari-accent-color);
+  color: var(--primari-team-color);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.62;
+}
+.nav-class{
+  display: flex;
+  justify-content: center;
+  padding-top: 174px;
+  padding-bottom: 56px;
+}
+
+.button-secondary:hover,
+.button-secondary:focus {
+  background-color: var(--hover-btn-color);
+  color: var(--primari-white-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+
 /* section */
 .section{
 padding-top: 47px;
@@ -234,7 +261,34 @@ padding-bottom: 47px;
 .product-list:not(:last-child){
   margin-right: 30px;
 }
+/* portfolio */
+.product-section{
+  padding-right: 215px;
+  padding-left: 215px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  
+  
+}
+.product-item{
+  margin-right: 30px;
+}
 
+.product-tittle-portfolio {
+  width: 322px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--primari-tittle-color);
+}
+.product-portfolio{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
 /* team */
 .team {
@@ -265,7 +319,8 @@ padding-bottom: 47px;
 .team-class{
   display: flex;
 }
-.team-list{
+.team-list:not(:last-child){
+    margin-right: 30px;
  text-align: center;
 }
 
