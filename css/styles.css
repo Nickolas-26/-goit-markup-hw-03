@@ -6,6 +6,7 @@
   --primari-white-color: #ffffff;
   --primari-hero-color: #2f303a;
   --primari-team-color: #f5f4fa;
+  --hover-btn-color:#188CE8;
 }
 h1,h2,h3,h4,h5,h6{
   margin: 0;
@@ -16,6 +17,10 @@ ul{
   padding: 0;
   list-style: none;
 }
+a,
+u {
+  text-decoration: none;
+}
 
 button {
   cursor: pointer;
@@ -25,6 +30,11 @@ button {
   background-color: var(--primari-background-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
+}
+
+.header-section{
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 /* logo */
 .logo {
@@ -42,16 +52,26 @@ span.logo-style {
 span.logo-style-white {
   color: var(--primari-white-color);
 }
-ul {
-  list-style: none;
-}
-a,
-u {
-  text-decoration: none;
-}
+
 
 /* site nav */
+.nav{
+  display:flex;
+  align-items: center;
+
+}
+.logo{
+  
+  margin-right: 93px;
+}
+.nav-item {
+  display: flex;
+}
+.nav-item:not(:last-child){
+  margin-right: 50px;
+}
 .site-nav {
+  display: flex;  
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -59,32 +79,35 @@ u {
   color: var(--primari-tittle-color);
 }
 
+.header-container{
+  display: flex;
+
+}
+
 .site-nav:hover,
 .site-nav:focus {
   color: var(--primari-accent-color);
+  
 }
 .site-nav-current {
   color: var(--primari-accent-color);
+ 
 }
 
 .auth-nav {
+  margin-left: auto;
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primari-text-color);
-  margin: 0;
-  padding: 0;
+  
 
 }
-.auth-nav {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--primari-accent-color);
+.link-item{
+  margin-right: 50px;
 }
-
 /* list */
 .list{
   padding-top: 0px;
@@ -93,7 +116,8 @@ u {
 }
 /*  hero  */
 .hero {
-  margin-bottom: 94px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
@@ -103,7 +127,10 @@ u {
   
 }
 .hero-tittle {
-  padding-top: 280px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  max-width: 696px;
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
@@ -114,27 +141,23 @@ u {
 
 }
 .button-main {
-  display: flex;
-  padding: 10px 32px;
-  display: inline-block;
-  background-color: var(--primari-team-color);
-  color: var(--primari-tittle-color);
+  display: block;
+  margin: 0 auto;
+  background-color: var(--primari-accent-color);
+  color: var(--primari-team-color);
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 1.62;
 }
-.btn-container{
-  text-align: center;
-  padding-bottom: 210px;
-  padding-top: 360px;
 
-}
+
 .button-main:hover,
 .button-main:focus {
-  background-color: var(--primari-accent-color);
+  background-color: var(--hover-btn-color);
   color: var(--primari-white-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 
@@ -149,7 +172,7 @@ padding-bottom: 47px;
   margin-bottom: 10px;
   font-family: Roboto;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -157,8 +180,14 @@ padding-bottom: 47px;
 }
 
 /* feature */
+.feature-section{
+  padding-top: 94px;
+  padding-bottom: 94px; 
+}
+.feature-class{
+  display: flex;
+}
 .feature-list {
-  margin-bottom: 94px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
@@ -171,32 +200,89 @@ padding-bottom: 47px;
   margin-bottom: 0;
   
 }
+.feature-item{
+  max-width: 270px;
+}
+.feature-item:not(:last-child){
+  margin-right: 30px;
+}
 .container{
-  text-align: center;
+    width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 /* product */
-.product-tittle {
-  color: var(--primari-tittle-color);
-  ffont-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 36px;
+
+
+.product-class{
+  display: flex;
 }
-.product-list {
+
+.product-tittle {
+  margin-bottom: 50px;
   font-family: Roboto;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primari-tittle-color);
+}
+.product-list:not(:last-child){
+  margin-right: 30px;
+}
+
+
+/* team */
+.team {
+  margin-top: 100px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.team-tittle {
+
+  margin-bottom: 50px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primari-tittle-color);
+}
+.description {
+  color: var(--primari-tittle-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
   font-size: 16px;
-  line-height: 1.87;
-  color: var(--primari-text-color);
+  line-height: 1.18;
+}
+.team-class{
+  display: flex;
+}
+.team-list{
+ text-align: center;
+}
+
+.class{
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /* footer */
 .footer-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--primari-hero-color);
 }
 .adress-section {
+  margin-top: 20px;
+  margin-bottom: 9px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
@@ -226,6 +312,9 @@ padding-bottom: 47px;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
 }
+.link-item:not(:last-child){
+  margin-bottom: 9px;
+}
 .link-footer:hover {
   color: var(--primari-accent-color);
 }
@@ -233,30 +322,3 @@ padding-bottom: 47px;
   color: var(--primari-accent-color);
 }
 
-/* team */
-.team {
-  background-color: var(--primari-team-color);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.18;
-}
-.team-tittle {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--primari-tittle-color);
-}
-.description {
-  color: var(--primari-tittle-color);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
-}
