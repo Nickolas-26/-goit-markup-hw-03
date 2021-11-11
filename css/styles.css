@@ -12,7 +12,7 @@ h1,h2,h3,h4,h5,h6{
   margin: 0;
 }
 
-ul{
+ul,p{
   margin: 0;
   padding: 0;
   list-style: none;
@@ -130,7 +130,7 @@ span.logo-style-white {
 
 }
 /*  hero  */
-.hero {
+.hero {  
   padding-top: 200px;
   padding-bottom: 200px;
   font-style: normal;
@@ -152,10 +152,12 @@ span.logo-style-white {
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
+  text-transform: uppercase;
   color: var(--primari-white-color);
 
 }
 .button-main {
+  padding: 10px 22px;
   display: block;
   margin: 0 auto;
   background-color: var(--primari-accent-color);
@@ -163,7 +165,7 @@ span.logo-style-white {
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.62;
 }
 
@@ -193,7 +195,8 @@ span.logo-style-white {
   display: flex;
   justify-content: center;
   padding-top: 94px;
-  padding-bottom: 50px;
+  padding-bottom: 94px;
+  margin-bottom: 50px;
 }
 
 .button-secondary:hover,
@@ -279,12 +282,10 @@ padding-bottom: 47px;
 }
 /* portfolio */
 .product-section{
-  padding-bottom: 94px;
-  padding-right: 215px;
-  padding-left: 215px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  align-items:center;
   align-content: center;
   
 }
@@ -295,7 +296,6 @@ padding-bottom: 47px;
 }
 
 .product-tittle-portfolio {
-  max-width:322px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 700;
@@ -304,14 +304,21 @@ padding-bottom: 47px;
   letter-spacing: 0.03em;
   color: var(--primari-tittle-color);
 }
+.product-list-portfolio{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--primari-text-color);
+}
 .product-portfolio{
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding:0 20px;
 }
 
 /* team */
 .team {
-  margin-top: 100px;
+  padding-top: 94px;
   padding-bottom: 94px;
   background-color:#F5F4FA;
 }
