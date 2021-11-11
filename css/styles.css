@@ -14,6 +14,7 @@ h1,h2,h3,h4,h5,h6{
 img{
   display: block;
   width: 100%;
+  height: auto;
 }
 ul,p{
   margin: 0;
@@ -199,7 +200,6 @@ span.logo-style-white {
   display: flex;
   justify-content: center;
   padding-top: 94px;
-  padding-bottom: 94px;
   margin-bottom: 50px;
 }
 
