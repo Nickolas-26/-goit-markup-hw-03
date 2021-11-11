@@ -11,7 +11,10 @@
 h1,h2,h3,h4,h5,h6{
   margin: 0;
 }
-
+img{
+  display: block;
+  width: 100%;
+}
 ul,p{
   margin: 0;
   padding: 0;
@@ -182,8 +185,9 @@ span.logo-style-white {
 .button-secondary {
   display: block;
   margin-right: 8px;
-  background-color: var(--primari-accent-color);
-  color: var(--primari-team-color);
+  background-color: #F5F4FA;;
+  color:var(--primari-tittle-color);
+  
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
@@ -201,8 +205,8 @@ span.logo-style-white {
 
 .button-secondary:hover,
 .button-secondary:focus {
-  background-color: var(--hover-btn-color);
-  color: var(--primari-white-color);
+  background-color: var(--primari-accent-color);
+  color: var(--primari-team-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
