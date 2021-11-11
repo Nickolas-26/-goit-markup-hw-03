@@ -235,7 +235,7 @@ padding-bottom: 47px;
   margin-right: 30px;
 }
 .container{
-    width: 1110px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -264,6 +264,8 @@ padding-bottom: 47px;
 }
 /* portfolio */
 .product-section{
+  padding-top: 50px;
+  padding-bottom: 94px;
   padding-right: 215px;
   padding-left: 215px;
   display: flex;
@@ -274,6 +276,7 @@ padding-bottom: 47px;
 }
 .product-item{
   margin-right: 30px;
+  border: 1px solid #EEEEEE
 }
 
 .product-tittle-portfolio {
