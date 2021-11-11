@@ -277,11 +277,11 @@ padding-bottom: 47px;
 }
 
 .product-tittle-portfolio {
-  width: 322px;
+  max-width:322px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 18;
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--primari-tittle-color);
