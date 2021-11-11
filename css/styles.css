@@ -37,6 +37,11 @@ button {
   padding-top: 24px;
   padding-bottom: 25px;
 }
+.header-section-portfolio{
+  border: 1px solid #ECECEC;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
 /* logo */
 .logo {
   color: var(--primari-accent-color);
@@ -78,6 +83,15 @@ span.logo-style-white {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primari-tittle-color);
+}
+.site-nav-portfolio{
+  display: flex;  
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primari-tittle-color);
+
 }
 
 .header-container{
@@ -178,8 +192,8 @@ span.logo-style-white {
   
   display: flex;
   justify-content: center;
-  padding-top: 174px;
-  padding-bottom: 56px;
+  padding-top: 94px;
+  padding-bottom: 50px;
 }
 
 .button-secondary:hover,
@@ -265,7 +279,6 @@ padding-bottom: 47px;
 }
 /* portfolio */
 .product-section{
-  padding-top: 50px;
   padding-bottom: 94px;
   padding-right: 215px;
   padding-left: 215px;
